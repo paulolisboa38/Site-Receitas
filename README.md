@@ -1,5 +1,4 @@
 # Grupo 01:
----
 
 - Daniel Alves
 - Everton M. L. Gonçalves
