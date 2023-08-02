@@ -1,7 +1,8 @@
 # Grupo 01:
+---
 
-Daniel Alves
-Everton M. L. Gonçalves
-Matheus Helfrich
-Raphael Cerutti Teodoro
-Paulo R S Lisboa
+- Daniel Alves
+- Everton M. L. Gonçalves
+- Matheus Helfrich
+- Raphael C. Teodoro
+- Paulo R. S. Lisboa
