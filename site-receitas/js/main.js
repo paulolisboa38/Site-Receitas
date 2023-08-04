@@ -1,23 +1,34 @@
-const loadHTML = (elem, filePath) => {
-	if (!elem) return
-
-	fetch(filePath, { headers: { Accept: 'text/html' } })
+const carregaHTML = (caminho, onSucesso) => {
+	// Faz requisição do arquivo
+	fetch(caminho, { headers: { Accept: 'text/html' } })
 	.then(response => response.text())
 	.then((html) => {
-		elem.innerHTML = html;
+		// Sucesso: executa "onSucesso"
+		onSucesso(html)
 	})
 	.catch(error => {
 		console.log(error);
 	});
 }
 
-const loadHeader = () => {
-	loadHTML(document.querySelector('header.default'), "./componentes/header.html")
+const carregaHeader = () => {
+	// Busca elemento
+	const elem = document.querySelector('header.default')
+	if (!elem) return
+
+	// Carrega HTML para elemento
+	carregaHTML("./componentes/header.html", (html) => { elem.innerHTML = html })
 }
 
-const loadFooter = () => {
-	loadHTML(document.querySelector('footer.default'),"./componentes/footer.html")
+const carregaFooter = () => {
+	// Busca elemento
+	const elem = document.querySelector('footer.default')
+	if (!elem) return
+
+	// Carrega HTML para elemento
+	carregaHTML("./componentes/footer.html", (html) => { elem.innerHTML = html })
 }
 
-loadHeader();
-loadFooter();
+// Inicialização
+carregaHeader();
+carregaFooter();
