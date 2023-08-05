@@ -9,7 +9,7 @@ const carregaHeader = async () => {
 		let html = await response.text();
 		elem.innerHTML = html
 	} catch (error) {
-		console.log(error);
+		console.log(error)
 	}
 }
 
@@ -24,10 +24,10 @@ const carregaFooter = async () => {
 		let html = await response.text();
 		elem.innerHTML = html
 	} catch (error) {
-		console.log(error);
+		console.log(error)
 	}
 }
 
 // Inicialização
-carregaHeader();
-carregaFooter();
+carregaHeader()
+carregaFooter()
