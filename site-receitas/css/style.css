@@ -6,6 +6,7 @@
 }  
 body{ 
     margin-top: 55px;
+    color: white;
 }
 .receitas-populares{ 
     display: flex; 
@@ -104,4 +105,8 @@ p {
 
 body, html {
     overflow-x: hidden;
+}
+
+footer{
+    background-color: rgb(83, 80, 80);
 }
