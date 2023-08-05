@@ -1,4 +1,4 @@
-const C_QTD_RECEITAS_POPULARES = 5
+const C_QTD_RECEITAS_POPULARES = 3
 
 const buscaReceitasPopulares = (qtd) => {
 	// Clona lista de receitas
@@ -18,15 +18,19 @@ const buscaReceitasPopulares = (qtd) => {
 
 const montaCardReceita = (card, receita) => {
 	// Preenche "card" com informações de "receita"
-	card.querySelector("a").setAttribute('href', `./pagina-receita.html?receitaId=${receita.id}`)
-	card.querySelector(".titulo-card").innerHTML = receita.titulo
+	// card.querySelector("a").setAttribute('href', `./pagina-receita.html?receitaId=${receita.id}`) 
+	
+	card.querySelector(".titulo-card").innerHTML = receita.titulo 
+	card.querySelector(".card-img").src = receita.imagem 
+	card.querySelector(".descricao-card").innerHTML = receita.descricao
 
 	return card
 }
 
 const carregaReceitas = async () => {
 	// Busca elemento
-	const elem = document.querySelector('.receitas-populares')
+	// const elem = document.querySelector('.receitas-populares') 
+	const elem = document.querySelector('.cards')
 	if (!elem) return
 
 	// Busca receitas
