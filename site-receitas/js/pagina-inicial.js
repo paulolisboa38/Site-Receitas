@@ -36,14 +36,16 @@ const carregaReceitas = async () => {
 	try {
 		let response = await fetch("./componentes/card-receita.html");
 		let html = await response.text();
-		let modelo = new DOMParser().parseFromString(html, "text/xml").firstChild;
+		let wrapper = document.createElement('div');
+		wrapper.innerHTML = html;
+		let modelo = wrapper.firstChild;
 
 		// Preenche card com receitas
 		receitasPopulares.forEach((receita) => {
 			elem.appendChild(montaCardReceita(modelo.cloneNode(true), receita))
 		})
 	} catch (error) {
-		console.log(error);
+		console.log(error)
 	}
 }
 
