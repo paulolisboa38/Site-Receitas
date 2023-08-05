@@ -8,13 +8,12 @@ body{
     margin-top: 55px;
 }
 .receitas-populares{ 
-    display: flex; 
+    display: flex;  
     width: 100%;
     justify-content: center; 
-    background-size: cover;
+    background-size: cover; 
     height: 100vh;
-    /* background-color: #592d1d;  */ 
-    background: linear-gradient(#592d1d, #bf8b78);
+    background: linear-gradient(#592d1d, #bf8b78); 
     color: #fff;  
     
 } 
@@ -26,13 +25,12 @@ body{
     position: absolute;
     width: 500px;
     height: 7px;
-    background: #d41d69;
+    background: #d90416;
     margin-top: 150px;
-    border-radius: 4px; 
+    border-radius: 4px;  
     
 }
 .cards{ 
-    /* background-color: #bf8b78;  */
     position: absolute; 
     width: 80%; 
     height: 800px; 
@@ -40,15 +38,18 @@ body{
     display: flex; 
     justify-content: center; 
     align-items: center;  
-    background-color: aqua  ;
+    /* background-color: aqua  ; */
     
 }
-.card{ 
+.card{  
     width: 300px; 
-    height: 400px; 
+    height: 450px; 
     background-color: #d97904; 
     bottom: 150px; 
-    margin: 100px; 
+    /* margin: 100px;  */ 
+    margin-top: 150px; 
+    margin-left: 50px; 
+    margin-right: 50px;
     display: flex; 
     align-items: center; 
     justify-content: flex-start;  
@@ -62,7 +63,12 @@ body{
     border-radius: 50%; 
     transform: translateY(-50px);
 }
-
+.card h2{ 
+    font-size: 3vmin;
+} 
+.card p{ 
+    font-size: 2vmin;
+}
 .navbar-brand {
     padding-left: calc(var(--bs-gutter-x) * .5);
 }
