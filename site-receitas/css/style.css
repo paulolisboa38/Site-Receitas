@@ -12,6 +12,13 @@ body{
     margin-top: 55px;
     color: white;
 }
+main{
+    min-height: 90vh;
+}
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
 .receitas-populares{ 
     display: flex;  
     width: 100%;
@@ -110,7 +117,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
 }
 
-p {
+p.lead {
     font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
 }
