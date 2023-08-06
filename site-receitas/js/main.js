@@ -15,8 +15,8 @@ const carregaHeader = async () => {
 
 const carregaFooter = async () => {
 	// Busca elemento
-	const elem = document.querySelector('footer.default')
-	if (!elem) return
+	const elem = document.querySelector('footer.default') 
+	if (!elem) return 
 
 	// Carrega HTML para elemento
 	try {
