@@ -1,0 +1,12 @@
+.cover {
+    background-image: url('/site-receitas/img/cabecalhoPaginaInicial.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.receitas-populares{  
+    overflow: hidden;
+}
+.receitas-populares h1{
+	color: #fff;
+}
