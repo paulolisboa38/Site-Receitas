@@ -24,6 +24,8 @@ a.nostyle:link {
     width: 100%;
     justify-content: center; 
     background-size: cover; 
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     background: linear-gradient(#592d1d, #bf8b78); 
     color: #fff;  
@@ -31,26 +33,30 @@ a.nostyle:link {
 } 
 .receitas-populares h1{ 
     font-size: 75px; 
-    margin-top: 20px; 
-}  
+    margin-top: 20px;  
+    
+} 
+.titulo{ 
+    position: absolute; 
+    bottom: -200px;
+    
+}
 .line{ 
-    position: absolute;
+    position: absolute; 
+    bottom: -220px;
     width: 500px;
     height: 7px;
     background: #d90416;
-    margin-top: 150px;
     border-radius: 4px;  
     
 }
 .cards{ 
-    position: absolute; 
-    width: 80%; 
-    height: 800px; 
-    margin-top: 200px; 
+    width: 80vw; 
+    height: 800px;  
     display: flex; 
-    justify-content: center; 
+    justify-content: center;  
     align-items: center;  
-    /* background-color: aqua  ; */
+    /* background-color: aqua; */
     
 }
 .card{  
