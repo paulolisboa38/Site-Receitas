@@ -53,20 +53,20 @@ const carregaReceitas = async (local) => {
 	}
 }
 
-carregaReceitas(".cards") 
+carregaReceitas(".card-group") 
  
 // carregar as receitas para o carrossel
-const carrosselNext = document.querySelector(".carousel-control-next") 
-let contador = 0;
+// const carrosselNext = document.querySelector(".carousel-control-next") 
+// let contador = 0;
  
-carrosselNext.addEventListener("click", () => { 
-    if (contador == 0){ 
-        contador++ 
-        carregaReceitas(".c2")
-    } 
-    else if (contador == 1){ 
-        contador++   
-        carregaReceitas(".c3")
-    }
-}) 
+// carrosselNext.addEventListener("click", () => { 
+//     if (contador == 0){ 
+//         contador++ 
+//         carregaReceitas(".c2")
+//     } 
+//     else if (contador == 1){ 
+//         contador++   
+//         carregaReceitas(".c3")
+//     }
+// }) 
 //--------------------------------------------------------------------------------------//
