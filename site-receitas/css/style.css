@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rochester&display=swap');
 *{ 
     font-family: Montserrat;
+    color: #fff;
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;
