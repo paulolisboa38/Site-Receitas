@@ -1,10 +1,8 @@
 .card{
     background-color: #d97904;
-    height: 100%;
     color: #fff; 
 }
 .card img{
-	height: 250px;
 	object-fit: cover;
 }
 .card a.nostyle{
