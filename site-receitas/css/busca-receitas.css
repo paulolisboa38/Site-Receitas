@@ -1,11 +1,3 @@
-.card img{
-	height: 200px;
-	object-fit: cover;
-}
-.card a.nostyle{
-	height: 100%;
-	width: 100%;
-}
 .card .badge{
 	cursor: pointer;
 }

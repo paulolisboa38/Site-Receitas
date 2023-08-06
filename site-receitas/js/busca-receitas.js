@@ -12,28 +12,6 @@ const categoriaClick = (event) => {
 	event.preventDefault();
 }
 
-const montarCard = (card, receita) => {
-	// Preenche "card" com informações de "receita"
-	card.querySelector("a").href = `./pagina-receita.html?receitaId=${receita.id}`
-	card.querySelector(".card-img-top").src = receita.imagem
-	card.querySelector(".card-title").innerHTML = receita.titulo
-	card.querySelector(".card-text").innerHTML = receita.descricao
-
-	// Cria "span" para cada categoria
-	const categorias = card.querySelector(".categorias")
-	let categoria
-	receita.categorias.forEach((item) => {
-		categoria = document.createElement('span')
-		categoria.className = "badge bg-secondary m-1"
-		categoria.innerText = item
-		categoria.addEventListener('click', categoriaClick)
-
-		categorias.appendChild(categoria)
-	})
-
-	return card
-}
-
 const carregarReceitas = async () => {
 	// Busca elemento
 	const elem = document.querySelector('.receitas .container .row')
@@ -41,7 +19,7 @@ const carregarReceitas = async () => {
 
 	// Busca card modelo
 	try {
-		let response = await fetch("./componentes/card-busca-receita.html");
+		let response = await fetch("./componentes/card-receita.html");
 		let html = await response.text();
 		let wrapper = document.createElement('div');
 		wrapper.innerHTML = html;
@@ -49,7 +27,7 @@ const carregarReceitas = async () => {
 
 		// Preenche card para cada receita
 		listaReceitas.forEach((receita) => {
-			elem.appendChild(montarCard(modelo.cloneNode(true), receita))
+			elem.appendChild(montarCardReceita(modelo.cloneNode(true), receita, categoriaClick))
 		})
 	} catch (error) {
 		console.log(error)
