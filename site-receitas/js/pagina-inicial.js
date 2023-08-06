@@ -38,7 +38,7 @@ const carregaReceitas = async (local) => {
 
 	// Busca card modelo
 	try {
-		let response = await fetch("./componentes/card-receita.html");
+		let response = await fetch("./componentes/card-busca-receita.html");
 		let html = await response.text();
 		let wrapper = document.createElement('div');
 		wrapper.innerHTML = html;
@@ -46,14 +46,14 @@ const carregaReceitas = async (local) => {
 
 		// Preenche card com receitas
 		receitasPopulares.forEach((receita) => {
-			elem.appendChild(montaCardReceita(modelo.cloneNode(true), receita))
+			elem.appendChild(montarCard(modelo.cloneNode(true), receita))
 		})
 	} catch (error) {
 		console.log(error)
 	}
 }
 
-carregaReceitas(".card-group") 
+carregaReceitas(".row") 
  
 // carregar as receitas para o carrossel
 // const carrosselNext = document.querySelector(".carousel-control-next") 

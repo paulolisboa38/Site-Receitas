@@ -27,7 +27,7 @@ a.nostyle:link {
     background-size: cover; 
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#592d1d, #bf8b78); 
+    background: linear-gradient(#592d1d, #8d030f); 
     color: #fff;  
     overflow: hidden;
     
@@ -72,7 +72,7 @@ a.nostyle:link {
     box-shadow: 2px 1px rgba(0, 0, 0, 0.1); 
     cursor: pointer; 
     transition: 0.3;
-}  
+}   
 .navbar-brand {
     padding-left: calc(var(--bs-gutter-x) * .5);
 }
