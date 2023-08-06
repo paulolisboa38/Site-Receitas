@@ -1,5 +1,8 @@
+.card{
+    background-color: #d97904;
+    color: #fff; 
+}
 .card img{
-	height: 200px;
 	object-fit: cover;
 }
 .card a.nostyle{

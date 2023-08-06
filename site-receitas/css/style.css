@@ -5,113 +5,36 @@
     margin: 0; 
     box-sizing: border-box;
 }  
+body, html {
+    overflow-x: hidden;
+}
 body{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
     margin-top: 55px;
-    color: white;
+    background: linear-gradient(#592d1d, #8d030f); 
 }
 main{
     min-height: 90vh;
 }
+
 a.nostyle:link {
     text-decoration: inherit;
     color: inherit;
 }
-
-.titulo{ 
-    margin: 10px;
-} 
-.titulo h1{ 
-    font-size: 7vmin;
-}
 .line{ 
-   
     width: 40vmin;
     height: 7px;
     background: #d90416;
     border-radius: 4px;   
     margin: 0 10px 30px 10px;
-    
-}
-.cards{ 
-    width: 80vw; 
-    height: 800px;  
-    display: flex; 
-    justify-content: center;  
-    align-items: center;  
-    
-    
-} 
-.card{  
-    width: 300px; 
-    height: 450px; 
-    background: linear-gradient(#d97904, #d97904);
-    bottom: 150px; 
-    margin-top: 150px; 
-    margin-left: 50px; 
-    margin-right: 50px;
-    display: flex; 
-    align-items: center; 
-    justify-content: flex-start;  
-    color: #fff; 
-    text-align: center; 
-    box-shadow: 2px 1px rgba(0, 0, 0, 0.1); 
-    cursor: pointer; 
-    transition: 0.3;
-}   
-.navbar-brand {
-    padding-left: calc(var(--bs-gutter-x) * .5);
 }
 
-.nav-item{
+header.default .navbar-brand {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+header.default .nav-item{
     padding-right: calc(var(--bs-gutter-x) * .5);
 }
 
-.container-fluid {
-    padding: 0;
-}
-
-.jumbotron {
-    background-image: url('/site-receitas/img/cabecalhoPaginaInicial.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: left;
-    height: 100vh;
-    padding: 30vh 0;
-}
-
-.container {
-
-    margin: 0 auto; 
-
-} 
-
-h1 {
-    font-size: 48px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
-}
-
-p.lead {
-    font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
-}
-
-body, html {
-    overflow-x: hidden;
-}
-
-footer{
+footer.default{
     background-color: rgb(83, 80, 80);
-}
-
-label{
-    font: 100px;
-    color: black;
-}
-
-.background-contato {
-    background-color: rgba(0, 0, 0, 0.6);
 }

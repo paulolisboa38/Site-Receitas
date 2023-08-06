@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rochester&display=swap');
+*{ 
+    font-family: Montserrat;
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+body{
+    margin-top: 55px;
+}
+main{
+    min-height: 90vh;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+.line{ 
+    width: 40vmin;
+    height: 7px;
+    background: #d90416;
+    border-radius: 4px;   
+    margin: 0 10px 30px 10px;
+}
+
+header.default .navbar-brand {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+header.default .nav-item{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+}
+
+footer.default{
+    background-color: rgb(83, 80, 80);
+}
+/*CSS Contato*/
+.container-contato{
+    padding: 45px;
+    border-radius: 0;
+}
+.row{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.col-md-7{
+    padding: 20px;
+}
+.col-md-5{
+    background-color: #8d030f;
+    padding: 20px;
+    color: white;
+}
+.form-control{
+    height: 52px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: none! important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bi{
+    font-size: 20px;
+}
+.d-flex p{
+    font-size: 18px;
+    padding-left: 18px;
+}
+
+/* @media only screen and (max-width: 600px){
+    .container-contato{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 80;
+    }
+} */
