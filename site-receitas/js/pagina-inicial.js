@@ -27,10 +27,17 @@ const montaCardReceita = (card, receita) => {
 	return card
 }
 
+const montarItemCarrossel = (card, receita) => {
+    card.querySelector("img").src = receita.imagem
+    card.querySelector("h5").innerText = receita.titulo
+
+    return card
+}
+
 const carregaReceitas = async (local) => {
 	// Busca elemento
 	// const elem = document.querySelector('.receitas-populares') 
-	const elem = document.querySelector(local)
+	const elem = document.querySelector(".carousel-inner")
 	if (!elem) return
 
 	// Busca receitas
@@ -38,15 +45,22 @@ const carregaReceitas = async (local) => {
 
 	// Busca card modelo
 	try {
-		let response = await fetch("./componentes/card-receita.html");
+		let response = await fetch("./componentes/item-carrossel.html");
 		let html = await response.text();
 		let wrapper = document.createElement('div');
 		wrapper.innerHTML = html;
 		let modelo = wrapper.firstChild;
+		let primeiroAtivo = true;
 
 		// Preenche card com receitas
 		receitasPopulares.forEach((receita) => {
-			elem.appendChild(montarCardReceita(modelo.cloneNode(true), receita))
+			const itemCard = montarItemCarrossel(modelo.cloneNode(true), receita)
+			if (primeiroAtivo) {
+				itemCard.classList.add("active")
+				primeiroAtivo = false
+			}
+			elem.appendChild(itemCard)
+
 		})
 	} catch (error) {
 		console.log(error)
