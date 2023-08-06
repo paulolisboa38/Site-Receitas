@@ -96,4 +96,4 @@ const listaReceitas = [
 		descricao: "Camadas de massa de lasanha intercaladas com legumes grelhados e molho de tomate caseiro.",
 		categorias: [categoria_massas],
 	},
-];
+]; 
