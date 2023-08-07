@@ -1,0 +1,26 @@
+/* título */
+h1 {
+    color: #F29F05;
+}
+
+/* cards */
+.row{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #F29F05;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F29F05;
+}
+
+/* colunas */
+.bg-custom {
+    background-color: #BF8B78;
+    border-radius: 15px;
+}
