@@ -16,17 +16,6 @@ const buscaReceitasPopulares = (qtd) => {
 	return retorno
 }
 
-const montaCardReceita = (card, receita) => {
-	// Preenche "card" com informações de "receita"
-	// card.querySelector("a").setAttribute('href', `./pagina-receita.html?receitaId=${receita.id}`) 
-	
-	card.querySelector(".titulo-card").innerHTML = receita.titulo 
-	card.querySelector(".card-img").src = receita.imagem 
-	card.querySelector(".descricao-card").innerHTML = receita.descricao
-
-	return card
-}
-
 const montarItemCarrossel = (card, receita) => { 
 	card.querySelector("img").classList.add("rounded")
     card.querySelector("img").src = receita.imagem  
