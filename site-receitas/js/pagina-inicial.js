@@ -17,6 +17,7 @@ const buscaReceitasPopulares = (qtd) => {
 }
 
 const montarItemCarrossel = (card, receita) => { 
+	card.href = `./pagina-receita.html?receitaId=${receita.id}`
 	card.querySelector("img").classList.add("rounded")
     card.querySelector("img").src = receita.imagem  
 	card.querySelector("h5").classList.add("bg-black", "bg-opacity-50", "rounded")
