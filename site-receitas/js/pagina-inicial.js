@@ -27,8 +27,10 @@ const montaCardReceita = (card, receita) => {
 	return card
 }
 
-const montarItemCarrossel = (card, receita) => {
-    card.querySelector("img").src = receita.imagem
+const montarItemCarrossel = (card, receita) => { 
+	card.querySelector("img").classList.add("rounded")
+    card.querySelector("img").src = receita.imagem  
+	card.querySelector("h5").classList.add("bg-black", "bg-opacity-50", "rounded")
     card.querySelector("h5").innerText = receita.titulo
 
     return card

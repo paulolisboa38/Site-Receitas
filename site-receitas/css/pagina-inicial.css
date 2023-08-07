@@ -3,6 +3,12 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+} 
+.cover h1{
+    color: #fff;
+}
+.cover p {
+    color:#fff;
 }
 .receitas-populares{  
     display: flex;  
@@ -10,13 +16,14 @@
     height: 100%;
     background-size: cover; 
     flex-direction: column;
-    overflow: hidden;
+    color: #fff;  
+    overflow: hidden; 
+    justify-content: center; 
+    align-items: center;
+} 
+.receitas-populares h1{ 
+    margin: 10px;
 }
-
-.cover h1{
-    color: #fff;
-}
-
-.cover p {
-    color:#fff;
+h5{ 
+    display: inline;
 }
