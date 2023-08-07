@@ -22,3 +22,8 @@ body{
 footer{
     background-color: rgb(243, 241, 241);
 }
+
+.voltar {
+    padding: 20px;
+    color: white;
+}

@@ -1,0 +1,4 @@
+ol, li {
+    list-style-position: outside;
+    text-align: left;
+}

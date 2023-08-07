@@ -25,16 +25,19 @@ const carregaIngredientes = (elem, ingredientes) => {
 	})
 	elem.appendChild(row)
 }
+
 const carregaPreparo = (elem, preparo) => {
 	// Modelo
-	const modeloTitulo = document.createElement("h4")
+	const modeloRow = document.createElement("div")
+	modeloRow.className = "row"
+	const ul = document.createElement("ul")
 
 	// Carrega preparo
-	let titulo = undefined
+	let row = modeloRow.cloneNode()
 	preparo.forEach((prep) => {
 		if (typeof prep === 'object') {
 			// Título
-			elem.appendChild(row)
+			ul.appendChild(row)
 			row = modeloRow.cloneNode()
 			const col = document.createElement("div")
 			col.className = "col-lg-12 mt-3"
@@ -44,12 +47,13 @@ const carregaPreparo = (elem, preparo) => {
 		} else {
 			// Passo
 			const col = document.createElement("div")
-			col.className = "col-lg-6"
-			col.innerHTML = `<li>${prep}</li>`
+			col.className = "col-lg-12"
+			col.innerHTML = `<li><p>${prep}</p></li>`
 			row.appendChild(col)
-		}
+  		}
 	})
-	elem.appendChild(row)
+	ul.appendChild(row)
+	elem.appendChild(ul)
 }
 
 const carregarReceita = () => {
