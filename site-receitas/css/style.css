@@ -11,7 +11,7 @@ body, html {
 }
 body{
     margin-top: 55px;
-    background: linear-gradient(#592d1d, #8d030f); 
+    background: linear-gradient(#592d1d, #68020a); 
 }
 main{
     min-height: 90vh;
@@ -24,13 +24,16 @@ a.nostyle:link {
 .line{ 
     width: 40vmin;
     height: 7px;
-    background: #d90416;
+    background: #68020a;
     border-radius: 4px;   
     margin: 0 10px 30px 10px;
 }
 
 header.default .navbar-brand {
     padding-left: calc(var(--bs-gutter-x) * .5);
+}
+header.default .navbar-collapse{
+    transition: 0.5s;
 }
 header.default .nav-item{
     padding-right: calc(var(--bs-gutter-x) * .5);

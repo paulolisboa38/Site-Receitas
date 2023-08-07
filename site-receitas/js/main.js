@@ -5,9 +5,17 @@ const carregaHeader = async () => {
 
 	// Carrega HTML para elemento
 	try {
-		let response = await fetch("./componentes/header.html");
-		let html = await response.text();
+		let response = await fetch("./componentes/header.html")
+		let html = await response.text()
 		elem.innerHTML = html
+
+		const links = elem.querySelectorAll("a.nav-link")
+		for (let i = 0; i < links.length; i++) {
+			if (links[i].href == location.href) {
+				links[i].classList.add("active")
+				break
+			}
+		}
 	} catch (error) {
 		console.log(error)
 	}

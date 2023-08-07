@@ -14,7 +14,7 @@ const categoriaClick = (event) => {
 
 const carregarReceitas = async () => {
 	// Busca elemento
-	const elem = document.querySelector('.receitas .container .row')
+	const elem = document.querySelector('.receitas .row')
 	if (!elem) return
 
 	// Busca card modelo
@@ -46,7 +46,7 @@ const filtrarCategoria = (event) => {
 	}
 
 	// Percorre cards validando filtro
-	document.querySelectorAll('.receitas .container .row .col').forEach((card) => {
+	document.querySelectorAll('.receitas .col').forEach((card) => {
 		let esconde = true
 		if (filtroCategoria.length == 0) {
 			esconde = false
