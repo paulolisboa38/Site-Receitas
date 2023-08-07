@@ -16,7 +16,14 @@ h1 {
 }
 
 .card:hover{
-	transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.bg-image {
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    border-radius: .25rem;
 }
 
 /* colunas */
@@ -24,3 +31,4 @@ h1 {
     background-color: #BF8B78;
     border-radius: 15px;
 }
+
