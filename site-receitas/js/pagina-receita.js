@@ -70,6 +70,16 @@ const carregarReceita = () => {
 	// Carrega seções
 	carregaIngredientes(document.querySelector(".receita .ingredientes"), receita.ingredientes)
 	carregaPreparo(document.querySelector(".receita .preparo"), receita.preparo)
+
+	//Titulo da receita
+	const tituloReceita = receita.titulo;
+    const elementoTitulo = document.querySelector('.titulo');
+    elementoTitulo.textContent = tituloReceita;
+
+	//Imagem da receita
+	const imagemReceita = document.getElementById("imagem-receita");
+	imagemReceita.src = receita.imagem; 
+	imagemReceita.alt = receita.titulo;
 }
 
 carregarReceita()

@@ -2,3 +2,11 @@ ol, li {
     list-style-position: outside;
     text-align: left;
 }
+.voltar {
+    padding: 20px;
+}
+
+.voltar-final {
+    padding-right: 293px;
+    padding-bottom: 20px;
+}
