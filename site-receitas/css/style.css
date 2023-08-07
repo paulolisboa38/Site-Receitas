@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rochester&display=swap');
 *{ 
     font-family: Montserrat;
-    color: #fff;
+    color: black;
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;
@@ -11,7 +11,8 @@ body, html {
 }
 body{
     margin-top: 55px;
-    background: linear-gradient(#592d1d, #68020a); 
+    background-color: rgba(180, 175, 175, 0.1);
+    /* background: linear-gradient(#592d1d, #68020a);  */
 }
 main{
     min-height: 90vh;
@@ -23,12 +24,7 @@ a.nostyle {
 }
 
 .navbar{
-    background-color: #592d1d;
-    border-bottom: 1px solid #472317;
-}
-
-header.default {
-    background-color: #592d1d;
+    border-bottom: 1px solid black;
 }
 
 header.default .navbar-brand {
@@ -41,6 +37,6 @@ header.default .nav-item{
     padding-right: calc(var(--bs-gutter-x) * .5);
 }
 
-footer.default{
-    background-color: #68020a;
-}
+/* footer.default{
+    background-color: rgba(0, 0, 0, 0.661);
+} */

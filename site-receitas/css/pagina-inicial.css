@@ -12,4 +12,12 @@
     flex-direction: column;
     color: #fff;  
     overflow: hidden;
-} 
+}
+
+h1{
+    color: #fff;
+}
+
+p {
+    color:#fff;
+}

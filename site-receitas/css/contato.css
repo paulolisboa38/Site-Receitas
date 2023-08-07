@@ -11,6 +11,14 @@
     color: black;
 }
 .contato .contate-nos{
-    background-color: #8d030f;
+    background-color: #d2a977;
     font-size: 20px;
+}
+
+body{
+    background-image: url('/site-receitas/img/cabecalhoPaginaInicial.jpg');
+}
+
+footer{
+    background-color: rgb(243, 241, 241);
 }
