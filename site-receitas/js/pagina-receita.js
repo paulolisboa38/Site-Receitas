@@ -1,24 +1,15 @@
-const carregarReceita = () => {
-	// Busca parâmetros
-	const params = new Proxy(new URLSearchParams(window.location.search), {
-		get: (searchParams, prop) => searchParams.get(prop),
-	});
-	if (params.receitaId == null) return
+const carregaIngredientes = (elem, ingredientes) => {
+	// Modelo
+	const modeloRow = document.createElement("div")
+	modeloRow.className = "row"
 
-	// Busca receita
-	const receita = listaReceitas.find((r) => r.id == params.receitaId)
-	if (receita == null) return
-
-	// Ingredientes
-	const moldeRow = document.createElement("div")
-	moldeRow.className = "row"
-	let row = moldeRow.cloneNode()
-	const elem = document.querySelector(".receita .ingredientes")
-	receita.ingredientes.forEach((ing) => {
+	// Carrega ingredientes
+	let row = modeloRow.cloneNode()
+	ingredientes.forEach((ing) => {
 		if (typeof ing === 'object') {
 			// Título
 			elem.appendChild(row)
-			row = moldeRow.cloneNode()
+			row = modeloRow.cloneNode()
 			const col = document.createElement("div")
 			col.className = "col-lg-12 mt-3"
 			col.innerHTML = `<h4>${ing.titulo}</h4>`
@@ -33,6 +24,48 @@ const carregarReceita = () => {
 		}
 	})
 	elem.appendChild(row)
+}
+const carregaPreparo = (elem, preparo) => {
+	// Modelo
+	const modeloTitulo = document.createElement("h4")
+
+	// Carrega preparo
+	let titulo = undefined
+	preparo.forEach((prep) => {
+		if (typeof prep === 'object') {
+			// Título
+			elem.appendChild(row)
+			row = modeloRow.cloneNode()
+			const col = document.createElement("div")
+			col.className = "col-lg-12 mt-3"
+			col.innerHTML = `<h4>${prep.titulo}</h4>`
+			console.log(col)
+			row.appendChild(col)
+		} else {
+			// Passo
+			const col = document.createElement("div")
+			col.className = "col-lg-6"
+			col.innerHTML = `<li>${prep}</li>`
+			row.appendChild(col)
+		}
+	})
+	elem.appendChild(row)
+}
+
+const carregarReceita = () => {
+	// Busca parâmetros
+	const params = new Proxy(new URLSearchParams(window.location.search), {
+		get: (searchParams, prop) => searchParams.get(prop),
+	});
+	if (params.receitaId == null) return
+
+	// Busca receita
+	const receita = listaReceitas.find((r) => r.id == params.receitaId)
+	if (receita == null) return
+
+	// Carrega seções
+	carregaIngredientes(document.querySelector(".receita .ingredientes"), receita.ingredientes)
+	carregaPreparo(document.querySelector(".receita .preparo"), receita.preparo)
 }
 
 carregarReceita()

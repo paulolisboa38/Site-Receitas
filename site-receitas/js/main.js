@@ -17,7 +17,7 @@ const carregaHeader = async () => {
 		}
 		href = href.toUpperCase()
 		for (let i = 0; i < links.length; i++) {
-			if (links[i].href.toUpperCase() == href) {
+			if (href.indexOf(links[i].href.toUpperCase()) >= 0) {
 				links[i].classList.add("active")
 				break
 			}

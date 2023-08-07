@@ -1,6 +1,10 @@
 .card{
     background-color: #d97904;
     color: #fff; 
+	transition: transform 0.15s;
+}
+.card:hover{
+	transform: scale(1.05);
 }
 .card img{
 	object-fit: cover;
