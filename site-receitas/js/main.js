@@ -9,9 +9,15 @@ const carregaHeader = async () => {
 		let html = await response.text()
 		elem.innerHTML = html
 
+		// Marca link atual como ativo no navbar
 		const links = elem.querySelectorAll("a.nav-link")
+		let href = location.href
+		if (!href.split("/").pop()) {
+			href += "index.html"
+		}
+		href = href.toUpperCase()
 		for (let i = 0; i < links.length; i++) {
-			if (links[i].href == location.href) {
+			if (links[i].href.toUpperCase() == href) {
 				links[i].classList.add("active")
 				break
 			}
