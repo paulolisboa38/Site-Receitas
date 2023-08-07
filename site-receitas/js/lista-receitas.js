@@ -60,6 +60,9 @@ const listaReceitas = [
 			"Levar os ingredientes ao fogo até engrossar.",
 			"Cortar o bolo ao meio, rechear, colocar a cobertura e enfeitar com os morangos.",
 		],
+		dicas: [
+			"Pré-aqueça o forno por 30 minutos antes de levar os ingredientes ao forno."
+		],
 	},
 	{
 		id: 2,

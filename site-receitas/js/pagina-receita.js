@@ -30,9 +30,9 @@ const carregaPreparo = (elem, preparo) => {
 	// Modelo
 	const modeloRow = document.createElement("div")
 	modeloRow.className = "row"
-	const ul = document.createElement("ul")
 
 	// Carrega preparo
+	const ul = document.createElement("ul")
 	let row = modeloRow.cloneNode()
 	preparo.forEach((prep) => {
 		if (typeof prep === 'object') {
@@ -53,7 +53,26 @@ const carregaPreparo = (elem, preparo) => {
   		}
 	})
 	ul.appendChild(row)
+
 	elem.appendChild(ul)
+}
+
+const carregaDicas = (elem, dicas) => {
+	if (!dicas) {
+		// Não há dicas
+		const div = document.createElement("div")
+		div.className = "text-secondary"
+		div.innerText = "Não há dicas ou observações para esta receita.";
+		elem.appendChild(div)
+		return
+	}
+
+	// Carrega dicas
+	dicas.forEach((dica) => {
+		const div = document.createElement("li")
+		div.innerHTML = dica;
+		elem.appendChild(div)
+	})
 }
 
 const carregarReceita = () => {
@@ -70,6 +89,7 @@ const carregarReceita = () => {
 	// Carrega seções
 	carregaIngredientes(document.querySelector(".receita .ingredientes"), receita.ingredientes)
 	carregaPreparo(document.querySelector(".receita .preparo"), receita.preparo)
+	carregaDicas(document.querySelector(".receita .dicas"), receita.dicas)
 
 	//Titulo da receita
 	const tituloReceita = receita.titulo;
