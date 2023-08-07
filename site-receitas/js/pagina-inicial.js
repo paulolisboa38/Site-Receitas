@@ -34,7 +34,7 @@ const montarItemCarrossel = (card, receita) => {
     return card
 }
 
-const carregaReceitas = async (local) => {
+const carregaReceitas = async () => {
 	// Busca elemento
 	// const elem = document.querySelector('.receitas-populares') 
 	const elem = document.querySelector(".carousel-inner")
@@ -67,20 +67,9 @@ const carregaReceitas = async (local) => {
 	}
 }
 
-carregaReceitas(".row") 
- 
-// carregar as receitas para o carrossel
-// const carrosselNext = document.querySelector(".carousel-control-next") 
-// let contador = 0;
- 
-// carrosselNext.addEventListener("click", () => { 
-//     if (contador == 0){ 
-//         contador++ 
-//         carregaReceitas(".c2")
-//     } 
-//     else if (contador == 1){ 
-//         contador++   
-//         carregaReceitas(".c3")
-//     }
-// }) 
-//--------------------------------------------------------------------------------------//
+const carregaCategorias = () => {
+	
+}
+
+carregaReceitas() 
+carregaCategorias()

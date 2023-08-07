@@ -36,7 +36,7 @@ const listaReceitas = [
 			"2 copos de açúcar",
 			"3 colheres de margarina",
 			"3 ovos",
-			"2 copos de leite",
+			",2 copos de leite",
 			"1/2 xícara (chá) de chocolate",
 			"3 copos de farinha de trigo",
 			"1 colher (sopa) de fermento",
