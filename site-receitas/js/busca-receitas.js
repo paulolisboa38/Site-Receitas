@@ -89,7 +89,7 @@ const carregarCategorias = async () => {
 		check.checked = filtroCategoria.includes(listaCategorias[i]) ? "checked" : ""
 
 		const label = document.createElement("label")
-		label.className = "btn btn-sm btn-outline-secondary m-1 fw-bold"
+		label.className = "btn btn-sm btn-outline-dark m-1 fw-bold"
 		label.setAttribute("for", check.id)
 		label.innerText = listaCategorias[i];
 		label.addEventListener('click', filtrarCategoria)

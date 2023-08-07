@@ -73,7 +73,7 @@ const carregaCategorias = () => {
 
 	listaCategorias.forEach((cat) => {
 		const a = document.createElement("a")
-		a.className = "btn btn-outline-secondary mx-3 my-1"
+		a.className = "btn btn-outline-dark mx-3 my-1"
 		a.href = `./busca-receitas.html?categoria=${cat}`
 		a.innerText = cat
 

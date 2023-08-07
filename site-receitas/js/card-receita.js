@@ -10,7 +10,7 @@ const montarCardReceita = (card, receita, onCategoriaClick = undefined) => {
 	let categoria
 	receita.categorias.forEach((item) => {
 		categoria = document.createElement('span')
-		categoria.className = "badge bg-secondary m-1"
+		categoria.className = "badge bg-dark m-1"
 		categoria.innerText = item
 		if (onCategoriaClick) {
 			categoria.addEventListener('click', onCategoriaClick)
