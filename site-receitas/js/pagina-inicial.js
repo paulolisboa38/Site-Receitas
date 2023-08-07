@@ -36,8 +36,7 @@ const montarItemCarrossel = (card, receita) => {
 
 const carregaReceitas = async () => {
 	// Busca elemento
-	// const elem = document.querySelector('.receitas-populares') 
-	const elem = document.querySelector(".carousel-inner")
+	const elem = document.querySelector(".receitas-populares .carousel-inner")
 	if (!elem) return
 
 	// Busca receitas
@@ -68,7 +67,18 @@ const carregaReceitas = async () => {
 }
 
 const carregaCategorias = () => {
-	
+	// Busca elemento
+	const elem = document.querySelector(".buscar .lista-categorias")
+	if (!elem) return
+
+	listaCategorias.forEach((cat) => {
+		const a = document.createElement("a")
+		a.className = "btn btn-outline-secondary mx-3 my-1"
+		a.href = `./busca-receitas.html?categoria=${cat}`
+		a.innerText = cat
+
+		elem.appendChild(a)
+	})
 }
 
 carregaReceitas() 

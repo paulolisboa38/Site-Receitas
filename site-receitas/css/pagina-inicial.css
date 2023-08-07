@@ -10,14 +10,13 @@
     height: 100%;
     background-size: cover; 
     flex-direction: column;
-    color: #fff;  
     overflow: hidden;
 }
 
-h1{
+.cover h1{
     color: #fff;
 }
 
-p {
+.cover p {
     color:#fff;
 }
