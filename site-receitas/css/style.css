@@ -22,6 +22,15 @@ a.nostyle:link {
     color: inherit;
 }
 
+.navbar{
+    background-color: #592d1d;
+    border-bottom: 1px solid #472317;
+}
+
+header.default {
+    background-color: #592d1d;
+}
+
 header.default .navbar-brand {
     padding-left: calc(var(--bs-gutter-x) * .5);
 }
@@ -33,5 +42,5 @@ header.default .nav-item{
 }
 
 footer.default{
-    background-color: rgb(83, 80, 80);
+    background-color: #68020a;
 }
