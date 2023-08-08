@@ -12,8 +12,8 @@
 }
 .receitas-populares{  
     display: flex;  
-    width: 100vw;  
-    height: 100%;
+    /* width: 100vw;   */
+    /* height: 470px; */
     background-size: cover; 
     flex-direction: column;
     color: #fff;  
@@ -26,4 +26,13 @@
 }
 h5{ 
     display: inline;
+}
+
+.carousel, .carousel img{
+    width: 70vw;
+    height: 70vh;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    background-color: rgba(0, 0, 0, 0.2);
 }
