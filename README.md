@@ -1,3 +1,14 @@
+## Grupo 01
+  
+### Autores:
+- Daniel Alves
+- Everton M. L. Gonçalves
+- Matheus Helfrich
+- Paulo R. S. Lisboa
+- Raphael C. Teodoro
+- Ricardo Amorim
+
+
 # Delícias Culinárias
 
 É um site dedicado a entusiastas da culinária e amantes da boa comida. O site visa reunir receitas deliciosas, oferecendo aos visitantes uma experiência gastronômica rica, desde pratos principais requintados até sobremesas decadentes e refrescantes bebidas. Os usuários podem explorar uma variedade de receitas, categorizadas para facilitar a navegação, e também entrar em contato diretamente com a equipe por trás do site para perguntas ou sugestões. Além disso, a plataforma destaca-se por seu design responsivo, garantindo uma experiência de usuário suave em qualquer dispositivo. A quarta página, dedicada a cursos, amplia o escopo do site, permitindo aos entusiastas da culinária não apenas explorar receitas, mas também aprofundar seus conhecimentos e habilidades por meio de aulas e tutoriais. Com uma paleta de cores apetitosa e imagens de dar água na boca, "Delícias Culinárias" vai além de um simples site de receitas; é uma passagem para uma experiência culinária completa e enriquecedora.
@@ -92,17 +103,6 @@
 Para acompanhar o planejamento e o progresso do projeto, consulte nosso board no Trello.
 https://trello.com/b/E9ANVNnx/frontend
 
-
-
-## Grupo 01
-  
-### Autores:
-- Daniel Alves
-- Everton M. L. Gonçalves
-- Matheus Helfrich
-- Paulo R. S. Lisboa
-- Raphael C. Teodoro
-- Ricardo Amorim
 
 
 ## Licença
