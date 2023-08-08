@@ -10,20 +10,6 @@
 .cover p {
     color:#fff;
 }
-.receitas-populares{  
-    display: flex;  
-    /* width: 100vw;   */
-    /* height: 470px; */
-    background-size: cover; 
-    flex-direction: column;
-    color: #fff;  
-    overflow: hidden; 
-    justify-content: center; 
-    align-items: center;
-} 
-.receitas-populares h1{ 
-    margin: 10px;
-}
 h5{ 
     display: inline;
 }

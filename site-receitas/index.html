@@ -26,14 +26,14 @@
 	<main>
 		<section class="cover jumbotron jumbotron-fluid text-white d-flex align-items-center">
 			<div class="container text-center p-3 mb-5 bg-black bg-opacity-50 rounded">
-				<h1 class="p-2">Delícias Culinárias</h1>
+				<h1 class="display-4 p-2">Delícias Culinárias</h1>
 				<p class="p-2 lead">Bem-vindo ao Delícias Culinárias, o destino online para os amantes da gastronomia e da arte de cozinhar! Neste site, mergulhe em um mundo de sabores, aromas e técnicas culinárias que irão despertar o chef que há em você.</p>
 			</div>
 		</section>
 
-		<h1 style="display: flex; justify-content: center;">Receitas Populares</h1>
-		<section class="receitas-populares"> 
-			<div class="m-5">
+		<section class="receitas-populares d-flex align-items-center overflow-hidden py-5"> 
+			<div class="container text-center d-flex flex-column align-items-center p-3 mb-5">
+				<h1 class="display-4 mb-5">Receitas Populares</h1>
 				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -51,13 +51,14 @@
 					</button>
 				</div>
 			</div>
-			
 		</section>
 
-		<section class="buscar align-items-center d-flex flex-column bg-secondary bg-opacity-25 p-5">
-			<h1 class="display-4 my-3 text-center">Buscar receitas</h1>
-			<div class="lista-categorias d-flex justify-content-center flex-wrap"></div>
-			<a class="btn btn-primary mt-4" href="./busca-receitas.html">Ver todas as receitas</a>
+		<section class="buscar d-flex align-items-center flex-column bg-secondary bg-opacity-25 py-5">
+			<div class="container text-center p-3 mb-5">
+				<h1 class="display-4 mb-5">Buscar receitas</h1>
+				<div class="lista-categorias d-flex justify-content-center flex-wrap mb-4"></div>
+				<a class="btn btn-primary" href="./busca-receitas.html">Ver todas as receitas</a>
+			</div>
 		</section>
 	</main>
 	<footer class="default"></footer>
