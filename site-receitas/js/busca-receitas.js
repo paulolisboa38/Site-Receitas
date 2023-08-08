@@ -1,11 +1,10 @@
-let filtroCategoria = []
-let elementosFiltroCategoria = []
+let listaElementosCategoria = []
 
 const categoriaClick = (event) => {
 	// Busca botão de filtro e clica nele
-	for (let i = 0; i < elementosFiltroCategoria.length; i++) {
-		if (elementosFiltroCategoria[i].innerText == event.target.innerText) {
-			elementosFiltroCategoria[i].click()
+	for (let i = 0; i < listaElementosCategoria.length; i++) {
+		if (listaElementosCategoria[i].label.innerText == event.target.innerText) {
+			listaElementosCategoria[i].label.click()
 			break
 		}
 	}
@@ -34,16 +33,21 @@ const carregarReceitas = async () => {
 	}
 }
 
-const filtrarCategoria = (event) => {
-	// Atualiza "filtroCategoria"
-	if (event) {
-		const idx = filtroCategoria.indexOf(event.target.innerText)
-		if (idx >= 0) {
-			filtroCategoria.splice(idx, 1)
-		} else {
-			filtroCategoria.push(event.target.innerText)
+const buscarFiltroCategoria = () => {
+	let filtro = []
+	// Carrega filtro dos campos da tela
+	listaElementosCategoria.forEach((item) => {
+		if (item.check.checked) {
+			filtro.push(item.label.innerText)
 		}
-	}
+	})
+
+	return filtro
+}
+
+const filtrarCategoria = () => {
+	// Busca filtro
+	const filtroCategoria = buscarFiltroCategoria()
 
 	// Percorre cards validando filtro
 	document.querySelectorAll('.receitas .col').forEach((card) => {
@@ -74,8 +78,10 @@ const carregarCategorias = async () => {
 	const params = new Proxy(new URLSearchParams(window.location.search), {
 		get: (searchParams, prop) => searchParams.get(prop),
 	});
+
+	let categoriasMarcadas = []
 	if (params.categoria != null) {
-		filtroCategoria = params.categoria.split(",")
+		categoriasMarcadas = params.categoria.split(",")
 	}
 
 	// Cria caregorias
@@ -86,15 +92,15 @@ const carregarCategorias = async () => {
 		check.className = "btn-check btn-sm m-1"
 		check.id = `categoria-${i+1}`
 		check.autocomplete="off"
-		check.checked = filtroCategoria.includes(listaCategorias[i]) ? "checked" : ""
+		check.checked = categoriasMarcadas.includes(listaCategorias[i]) ? "checked" : ""
+		check.addEventListener('click', filtrarCategoria)
 
 		const label = document.createElement("label")
 		label.className = "btn btn-sm btn-outline-dark m-1 fw-bold"
 		label.setAttribute("for", check.id)
 		label.innerText = listaCategorias[i];
-		label.addEventListener('click', filtrarCategoria)
 
-		elementosFiltroCategoria.push(label)
+		listaElementosCategoria.push({ "check": check, "label": label })
 		elem.appendChild(check)
 		elem.appendChild(label)
 	}
@@ -103,7 +109,7 @@ const carregarCategorias = async () => {
 	await carregarReceitas()
 
 	// Filtra receitas
-	if (filtroCategoria.length > 0) {
+	if (categoriasMarcadas.length > 0) {
 		filtrarCategoria()
 	}
 }

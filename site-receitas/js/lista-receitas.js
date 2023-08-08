@@ -61,7 +61,9 @@ const listaReceitas = [
 			"Cortar o bolo ao meio, rechear, colocar a cobertura e enfeitar com os morangos.",
 		],
 		dicas: [
-			"Pré-aqueça o forno por 30 minutos antes de levar os ingredientes ao forno."
+			"Antes de começar a preparar a massa, pré-aqueça o forno à temperatura indicada na receita. Assim, quando a massa estiver pronta, o forno estará na temperatura ideal para assar o bolo.",
+			"Você pode personalizar a receita adicionando outros ingredientes, como raspas de chocolate na cobertura ou substituindo os morangos por outras frutas de sua preferência.",
+			"Para verificar se o bolo está assado, faça o teste do palito. Insira um palito no centro do bolo; se sair limpo ou com algumas migalhas, estará pronto. Se o palito sair com massa crua, deixe o bolo assar um pouco mais.",
 		],
 	},
 	{
@@ -84,6 +86,9 @@ const listaReceitas = [
 			"Passe os bifes nesse molho e reserve tampado na geladeira por 20 minutos.",
 			"Após esse tempo, coloque a manteiga ou margarina em uma frigideira e cozinhe por 10 minutinhos até que dourem.",
 			"Se preferir, pode colocar no finalzinho 1 colher do molho que restou para aproveitar o fundinho da frigideira, fica uma delícia!",
+		],
+		dicas: [
+			"Ao final do cozimento, você pode adicionar uma colher do molho que restou da marinada na frigideira para obter um sabor extra e criar um delicioso molho para servir sobre os bifes. Isso adicionará um toque extra de limão e ervas ao prato.",
 		],
 	},
 	{
@@ -114,6 +119,10 @@ const listaReceitas = [
 			"Decore com sementes de maracujá e fatias de laranjas.",
 			"Sirva a seguir.",
 		],
+		dicas: [
+			"A combinação do agridoce do maracujá e da maionese proporciona um sabor único. Certifique-se de coar o suco dos maracujás para remover as sementes, tornando o molho mais suave.",
+			"A adição de açúcar ao molho pode variar dependendo da acidez dos maracujás e laranjas utilizados.",
+		],
 	},
 	{
 		id: 4,
@@ -139,6 +148,10 @@ const listaReceitas = [
 			"Liquidificar os ingredientes do molho, adicionando o azeite no final, em velocidade média e deixar descansar.",
 			"Colocar, intercaladamente, as fatias de tomate, do queijo minas e um pouco de Cream Cheese Philadelphia em um prato grande.",
 			"Banhar com o molho e enfeitar com as nozes ou pinhões.",
+		],
+		dicas: [
+			"Adicionar um pouco de alho picado ou alho em pó pode ser uma opção para dar um toque extra ao molho.",
+			"Você pode adicionar algumas folhas de manjericão entre as camadas de tomate e queijo ou usá-las como enfeite.",
 		],
 	},
 	{

@@ -68,11 +68,13 @@ const carregaDicas = (elem, dicas) => {
 	}
 
 	// Carrega dicas
+	const ul = document.createElement("ul")
 	dicas.forEach((dica) => {
-		const div = document.createElement("li")
-		div.innerHTML = dica;
-		elem.appendChild(div)
+		const li = document.createElement("li")
+		li.innerHTML = `<p>${dica}</p>`;
+		ul.appendChild(li)
 	})
+	elem.appendChild(ul)
 }
 
 const carregarReceita = () => {
